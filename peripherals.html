@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="peripherals.css">
+    <title>V-tech Store - Peripherals</title>
+</head>
+<body>
+    <div id="loading-overlay">
+        <img src="./sauces/catto.gif" alt="Loading">
+    </div>
+    <header>
+        <h1>V-tech Store</h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="peripherals.html">Peripherals</a>
+            <a href="hardware.html">Hardware Parts</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <section class="main-content" id="category-container">
+        <div class="category-container" onclick="showSubcategories('mouse', 'Mouse', mouseSubcategories)">
+            <img src="sauces/mouse.jpg" alt="Mouse">
+            <h2>Mouse</h2>
+        </div>
+        <div class="category-container" onclick="showSubcategories('keyboard', 'Keyboard', keyboardSubcategories)">
+            <img src="sauces/keyboard.jpg" alt="Keyboard">
+            <h2>Keyboard</h2>
+        </div>
+        <div class="category-container" onclick="showSubcategories('headphones', 'Headphones', headphonesSubcategories)">
+            <img src="sauces/headphones.jpg" alt="Headphones">
+            <h2>Headphones</h2>
+        </div>
+        <div class="category-container" onclick="showSubcategories('monitor', 'Monitor', monitorSubcategories)">
+            <img src="sauces/monitor.jpg" alt="Monitor">
+            <h2>Monitor</h2>
+        </div>
+    </section>
+
+    <section class="subcategory-container" id="subcategory-container">
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 V-tech Store</p>
+    </footer>
+
+    <script src="peripherals.js"></script>
+</body>
+</html>

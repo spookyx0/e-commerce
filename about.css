@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('phts/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    height: 100vh; 
+}
+.profile-link {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    overflow-x: auto; 
+    padding: 20px;
+}
+
+.profile-container {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(115, 112, 112, 0.9); 
+    margin-right: 40px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.transparent-background {
+    background-color: transparent !important;
+}
+
+.profile-photo {
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 80%; 
+    border-radius: 10px 10px 0 0; 
+    object-fit: cover; 
+}
+
+.profile-image {
+    position: relative;
+    border-radius: 50%;
+    margin-top: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    z-index: 1; 
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
+    outline: none; 
+}
+.profile-container:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.profile-container:active {
+    transform: scale(0.95); 
+    transition: transform 0.1s ease-in-out;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 3; 
+}
+.back-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.modal-content {
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+/* Add a style for the highlighted text */
+/* Add a style for the highlighted text */
+.highlight {
+    display: inline-block;
+    animation: colorChange 2s infinite alternate; /* Add an animation for the color change */
+}
+
+@keyframes colorChange {
+    from {
+        color: rgb(0, 255, 0); /* Start color (green) */
+    }
+    to {
+        color: rgb(255, 0, 0); /* End color (red) */
+    }
+}
+
+
+

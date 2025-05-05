@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>About Page</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-container transparent-background" onclick="openModal('Vince Carlo Noora', 'BSIT Student', 'PART OF GREEN GUARD Team Champions', 'modal1')">
+            <div class="profile-photo">
+                <img class="background-image" src="phts/back1.jpg" alt="Background Photo">
+                <img class="profile-image" src="phts/ph1.jpg" alt="Student Profile Picture">
+            </div>
+            <h2 class="profile-name">Vince Carlo Noora</h2>
+            <p class="profile-program">BSIT Student</p>
+            <p class="profile-achievement"><span class="highlight">PART OF GREEN GUARD Team Champions</span></p>
+        </div>
+
+        <div class="profile-container transparent-background" onclick="openModal('Quinreeve Lobos', 'BSIT Student', 'PART OF GREEN GUARD Team Champions', 'modal2')">
+            <div class="profile-photo">
+                <img class="background-image" src="phts/back1.jpg" alt="Background Photo">
+                <img class="profile-image" src="phts/doggo2.jpg" alt="Student Profile Picture">
+            </div>
+            <h2 class="profile-name">Quinreeve Lobos</h2>
+            <p class="profile-program">BSIT Student</p>
+            <p class="profile-achievement"><span class="highlight">PART OF GREEN GUARD Team Champions</span></p>
+        </div>
+    </div>
+
+   
+
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+        <h2 id="modalProfileName1"></h2>
+        <p id="modalProfileProgram1"></p>
+        <p id="modalProfileAchievement1"></p>
+        <p id="modalEducation1"></p>
+        <button class="back-btn" onclick="closeModal('modal1')">Back</button>
+    </div>
+</div>
+
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+        <h2 id="modalProfileName2"></h2>
+        <p id="modalProfileProgram2"></p>
+        <p id="modalProfileAchievement2"></p>
+        <p id="modalEducation2"></p>
+        <button class="back-btn" onclick="closeModal('modal2')">Back</button>
+    </div>
+</div>
+
+
+
+
+    <script src="about.js"></script>
+</body>
+</html>
